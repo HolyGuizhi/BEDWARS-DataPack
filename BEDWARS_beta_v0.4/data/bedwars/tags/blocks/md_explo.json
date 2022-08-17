@@ -1,0 +1,11 @@
+{
+    "replace": false ,
+    "values": [
+        "minecraft:oak_planks",
+        "minecraft:blue_terracotta",
+        "minecraft:red_terracotta",
+        "minecraft:yellow_terracotta",
+        "minecraft:green_terracotta",
+        "minecraft:white_terracotta"
+    ]
+}

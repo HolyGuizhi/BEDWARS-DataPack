@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "type": {
+              "direct_entity": {
+                "type": "#minecraft:arrows",
+                "nbt": "{Tags:[\"plyr_01\"]}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:hit_by_arrow/plyr_01"
+    }
+  }
+  

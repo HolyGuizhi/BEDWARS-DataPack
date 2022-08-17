@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:green_bed"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:unplay/place_bed"
+    }
+  }
+  

@@ -1,0 +1,22 @@
+{
+    "replace": false ,
+    "values": [
+        "minecraft:blue_wool",
+        "minecraft:red_wool",
+        "minecraft:yellow_wool",
+        "minecraft:green_wool",
+        "minecraft:white_wool",
+        "minecraft:end_stone",
+        "minecraft:oak_planks",
+        "minecraft:blue_terracotta",
+        "minecraft:red_terracotta",
+        "minecraft:yellow_terracotta",
+        "minecraft:green_terracotta",
+        "minecraft:white_terracotta",
+        "minecraft:blue_stained_glass",
+        "minecraft:red_stained_glass",
+        "minecraft:yellow_stained_glass",
+        "minecraft:green_stained_glass",
+        "minecraft:white_stained_glass"
+    ]
+}

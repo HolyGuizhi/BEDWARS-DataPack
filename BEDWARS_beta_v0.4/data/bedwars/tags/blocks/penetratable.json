@@ -1,0 +1,27 @@
+{
+    "replace": false ,
+    "values": [
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air",
+        "minecraft:water",
+        "minecraft:lava",
+        "minecraft:torch",
+        "minecraft:wall_torch",
+        "minecraft:soul_torch",
+        "minecraft:soul_wall_torch",
+        "minecraft:lever",
+        "minecraft:lantern",
+        "minecraft:oak_button",
+        "minecraft:stone_button",
+        "minecraft:acacia_button",
+        "minecraft:birch_button",
+        "minecraft:jungle_button",
+        "minecraft:spruce_button",
+        "minecraft:warped_button",
+        "minecraft:crimson_button",
+        "minecraft:dark_oak_button",
+        "minecraft:mangrove_button",
+        "minecraft:polished_blackstone_button"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:blue_wool",
+        "minecraft:red_wool",
+        "minecraft:yellow_wool",
+        "minecraft:green_wool",
+        "minecraft:white_wool"
+    ]
+}

@@ -1,0 +1,52 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:leather_helmet"
+        ],
+        "enchantments": [
+          {
+            "enchantment": "minecraft:protection",
+            "levels": 1
+          }
+        ]
+      },
+      "chest": {
+        "items": [
+          "minecraft:leather_chestplate"
+        ],
+        "enchantments": [
+          {
+            "enchantment": "minecraft:protection",
+            "levels": 1
+          }
+        ]
+      },
+      "legs": {
+        "items": [
+          "minecraft:leather_leggings"
+        ],
+        "enchantments": [
+          {
+            "enchantment": "minecraft:protection",
+            "levels": 1
+          }
+        ]
+      },
+      "feet": {
+        "items": [
+          "minecraft:leather_boots"
+        ],
+        "enchantments": [
+          {
+            "enchantment": "minecraft:protection",
+            "levels": 1
+          }
+        ]
+      }
+    }
+  }
+}
