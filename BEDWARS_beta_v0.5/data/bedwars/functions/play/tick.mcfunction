@@ -1,7 +1,7 @@
 #Guizhi
 
 execute as @a at @s run function bedwars:play/plyr_tick
-execute as @e[type=marker] at @s run function bedwars:play/marker_tick
+execute as @e[type=marker,tag=!no_loop] at @s run function bedwars:play/marker_tick
 execute as @e[type=!player,type=!marker,tag=!no_loop] run function bedwars:play/entity_tick
 
 # Slow tick(除頻)
