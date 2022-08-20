@@ -19,14 +19,17 @@
 - 使用與查看各種指令：<br>
 `/function .cmd:commands`<br>
 
-- 重置所有設定：<br>
+- 重置所有設定 (請注意此功能並非還原戰場)：<br>
 `/function .cmd:reset`<br>
 
 - 中斷遊戲進行：<br>
 `/function .cmd:interrupt`<br>
 
 - 選擇隊伍：<br>
-`/function .cmd:team`<br><br>
+`/function .cmd:team`<br>
+
+- 給予權限：<br>
+`/tag <玩家> add op`<br><br>
 
 
 ## <b>補充</b>：
