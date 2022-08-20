@@ -29,3 +29,4 @@ execute if entity @p[scores={summon_golem=1..},tag=plyr_16] run tag @s add plyr_
 scoreboard players reset @a[scores={summon_golem=1..}] summon_golem
 data modify entity @s DeathTime set value 19
 attribute @s generic.max_health base set 40
+data modify entity @s Health set value 40
