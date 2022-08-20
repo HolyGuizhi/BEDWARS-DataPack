@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "nbt": "{red:1b}"
+        },
+        "chest": {
+          "nbt": "{red:1b}"
+        }
+      }
+    }
+  }
+  

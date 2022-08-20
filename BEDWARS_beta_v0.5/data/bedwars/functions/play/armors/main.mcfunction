@@ -29,6 +29,11 @@ execute if score @s Tmp matches 1.. if score @s Armor matches ..11 run scoreboar
 scoreboard players reset @s Tmp
 
 # Armors
+execute as @s[team=blue] unless predicate bedwars:blue_armor run item replace entity @s armor.head with air
+execute as @s[team=red] unless predicate bedwars:red_armor run item replace entity @s armor.head with air
+execute as @s[team=yellow] unless predicate bedwars:yellow_armor run item replace entity @s armor.head with air
+execute as @s[team=green] unless predicate bedwars:green_armor run item replace entity @s armor.head with air
+
 execute as @s[scores={Armor=0}] unless predicate bedwars:enchant_0/leather run function bedwars:play/armors/lvl_00
 execute as @s[scores={Armor=1}] unless predicate bedwars:enchant_1/leather run function bedwars:play/armors/lvl_01
 execute as @s[scores={Armor=2}] unless predicate bedwars:enchant_2/leather run function bedwars:play/armors/lvl_02
