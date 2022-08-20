@@ -15,7 +15,7 @@ tellraw @s {"text":">> 移除設置點："}
 tellraw @s {"text":"   ","extra":[{"text":" [移除最近的鑽石點] ","color":"red","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/remove_diamond"}},{"text":" [移除最近的綠寶石點] ","color":"red","clickEvent":{"action":"run_command","value":"/function bedwars:setpoint/remove_emerald"}}]}
 tellraw @s {"text":""}
 tellraw @s {"text":">> 遊戲執行："}
-tellraw @s {"text":"   ","extra":[{"text":" [開始遊戲] ","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function .cmd:start"}},{"text":" [中斷遊戲] ","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/function cmd:interrupt"}}]}
+tellraw @s {"text":"   ","extra":[{"text":" [開始遊戲] ","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function .cmd:start"}},{"text":" [中斷遊戲] ","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/function .cmd:interrupt"}}]}
 tellraw @s {"text":""}
 tellraw @s {"text":">> 其他功能："}
 tellraw @s {"text":"   ","extra":[{"text":" [切換玩家攻擊速度] ","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run function bedwars:set_attackspeed"}}]}

@@ -8,6 +8,8 @@ scoreboard players set 20 num 20
 scoreboard players set 3 num 3
 scoreboard players set 4 num 4
 scoreboard players set -1 num -1
+scoreboard players set 5 num 5
+scoreboard players set 10 num 10
 scoreboard players set slowtick num 0
 scoreboard players set @e[tag=resource] num 0
 
