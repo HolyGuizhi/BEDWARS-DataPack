@@ -59,6 +59,15 @@ team modify yellow prefix {"text":"[黃]","color":"yellow"}
 team modify green prefix {"text":"[綠]","color":"green"}
 function bedwars:display
 
+# GameRules
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false
+gamerule doInsomnia false
+gamerule disableRaids true
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+
 execute store result score Tmp Tmp run datapack list enabled
 tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" 資料包已成功載入！  (Made by Guizhi)","color":"white"}]
 execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"\n [BED WARS] ","color":"gold"},{"text":" 敬告，偵測到有其他正在運作的資料包，","bold":true,"color":"red"}]

@@ -6,6 +6,8 @@ kill @e[type=item]
 scoreboard players reset @e
 scoreboard players set @a leftgame 0
 scoreboard players set @a Armor 0
+scoreboard players set @a GameDeathCount 0
+scoreboard players set @a GameKillCount 0
 scoreboard objectives remove display
 scoreboard objectives add display dummy {"text":" BED WARS ","color":"gold","bold":true}
 scoreboard objectives setdisplay sidebar display
@@ -70,6 +72,7 @@ execute as @e[tag=diamond_tier] run data modify entity @s CustomName set value '
 execute as @e[tag=emerald_tier] run data modify entity @s CustomName set value '[{"text":"等級 "},{"text":"I","color":"green"}]'
 
 # Gamerules
+gamerule doImmediateRespawn true
 gamerule sendCommandFeedback false
 gamerule doMobSpawning false
 gamerule doMobLoot false
@@ -79,4 +82,5 @@ gamerule naturalRegeneration true
 gamerule mobGriefing false
 gamerule announceAdvancements false
 gamerule doLimitedCrafting true
+gamerule showDeathMessages false
 difficulty normal

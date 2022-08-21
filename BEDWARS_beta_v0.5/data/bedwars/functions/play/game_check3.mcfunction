@@ -7,6 +7,7 @@ clear @a glass_bottle
 execute as @a[tag=!op] unless predicate bedwars:check_item run item replace entity @s weapon.mainhand with air
 
 # Gamerules
+gamerule doImmediateRespawn true
 gamerule doMobSpawning false
 gamerule doMobLoot false
 gamerule keepInventory true

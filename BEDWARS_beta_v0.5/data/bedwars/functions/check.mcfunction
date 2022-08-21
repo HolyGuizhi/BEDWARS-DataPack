@@ -2,6 +2,10 @@
 
 scoreboard players set error num 0
 scoreboard players set playingteams num 0
+scoreboard objectives remove GameKillCount
+scoreboard objectives remove GameDeathCount
+scoreboard objectives add GameKillCount dummy
+scoreboard objectives add GameDeathCount dummy
 execute if entity @a[team=blue] run scoreboard players add playingteams num 1
 execute if entity @a[team=red] run scoreboard players add playingteams num 1
 execute if entity @a[team=yellow] run scoreboard players add playingteams num 1

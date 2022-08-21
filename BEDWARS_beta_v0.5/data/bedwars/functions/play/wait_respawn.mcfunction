@@ -1,6 +1,7 @@
 #Guizhi
 
 execute if score @s[scores={KillByPlyr=1..}] deathcount matches 1 run function bedwars:play/transfer_items
+execute if score @s deathcount matches 1 run scoreboard players add @s GameDeathCount 1
 execute if score @s deathcount matches 1 run clear @s
 execute if score @s deathcount matches 1 run scoreboard players reset @s fireball_count
 execute if score @s deathcount matches 1.. run gamemode spectator @s
