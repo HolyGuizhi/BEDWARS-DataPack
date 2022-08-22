@@ -46,8 +46,7 @@ https://www.youtube.com/channel/UCzLPmHoMTi-3oyakCDhGBAA<br>
 - <b>敬告</b>，雖然資料包經過作者非常多次的測試，但出現嚴重BUG的機會並非為0，<br>
   如造成您的地圖或其他檔案毀損，在此不做負責，因此仍建議您可以先做檔案備份，避免遺憾發生。<br><br>
 
-- 如果此資料包有Bug的話請<b>「不要」</b>回報至Youtube影片下方，本人可能會將其刪除，<br>
-  請回報至 ( 如果有發文的話 ) 巴哈姆特的文章下方，或此Github的Issue處<br>
+- 如果此資料包有Bug的話可以回報至Youtube影片下方，在修正後會將該回報留言刪除，<br>
   本人有空的時候會盡速做修正。<br><br>
 
 - <b>如果不熟悉如何安裝資料包</b>，可以參考以下網址：<br>
@@ -55,7 +54,7 @@ https://www.youtube.com/channel/UCzLPmHoMTi-3oyakCDhGBAA<br>
 
     <b>或是</b>：
     1. 按右上方"Code"選擇"Download ZIP"，下載並將其解壓縮
-    2. 把其中的<b>"BEDWARS_beta_vXXX"</b>整個資料夾，丟到Minecraft裡想安裝到的世界資料夾中的datapacks資料夾裡
+    2. 把其中的<b>"BEDWARS_beta_vXX"</b>整個資料夾，丟到Minecraft裡想安裝到的世界資料夾中的datapacks資料夾裡
     3. 回到遊戲重新進入那個世界<br><br><br>
 
 
