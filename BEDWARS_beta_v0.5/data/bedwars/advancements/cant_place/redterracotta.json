@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:red_terracotta"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/red_terracotta"
+    }
+  }

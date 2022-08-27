@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:yellow_terracotta"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/yellow_terracotta"
+    }
+  }

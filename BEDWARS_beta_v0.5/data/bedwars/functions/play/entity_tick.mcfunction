@@ -10,6 +10,7 @@ execute as @s[tag=emerald_block] at @s run tp @s ~ ~ ~ ~2 ~
 
 # 資源
 execute as @s[tag=resource] at @s run function bedwars:play/resources/home
+execute as @s[tag=cant_pickup,nbt={OnGround:1b}] at @s run function bedwars:play/resources/give_item
 
 # 床
 execute as @s[tag=bed] at @s run function bedwars:play/beds

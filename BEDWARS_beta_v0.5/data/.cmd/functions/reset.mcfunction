@@ -31,6 +31,8 @@ scoreboard objectives remove drop_diamond
 scoreboard objectives remove drop_emerald
 scoreboard objectives remove use_bow
 
+scoreboard players set version num 6
+
 # Teams
 team remove blue
 team remove red
@@ -43,6 +45,8 @@ team remove display_yellow_display
 team remove display_green_display
 team remove display_gold
 team remove display_gray
+
+advancement revoke @a everything
 
 # Settings
 function bedwars:load

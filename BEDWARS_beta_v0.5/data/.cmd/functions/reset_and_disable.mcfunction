@@ -44,5 +44,7 @@ team remove display_green_display
 team remove display_gold
 team remove display_gray
 
+advancement revoke @a everything
+
 # 提示
 tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" 已移除所有此資料包之所有設置 使用","color":"white"},{"text":"/datapack disable <資料包檔案名稱>","color":"yellow"},{"text":" 可以將此資料包停用","color":"white"}]

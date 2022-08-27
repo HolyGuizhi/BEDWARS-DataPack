@@ -1,5 +1,8 @@
 #Guizhi
 
+execute store result score message_flag num run gamerule sendCommandFeedback
+execute if score message_flag num matches 1 run gamerule sendCommandFeedback false
+
 team join spec @a
 
 team join blue @r[team=spec]

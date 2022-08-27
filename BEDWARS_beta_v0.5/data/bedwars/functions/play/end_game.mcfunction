@@ -3,6 +3,9 @@
 scoreboard players set playing num 0
 scoreboard objectives setdisplay sidebar
 schedule clear bedwars:play/resources/generator_tiers
+schedule clear bedwars:play/slow_tick/02
+schedule clear bedwars:play/slow_tick/03
+# schedule clear bedwars:play/slow_tick/04
 
 kill @e[tag=display]
 kill @e[type=item,tag=bedwars]

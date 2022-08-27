@@ -2,10 +2,20 @@
 
 scoreboard players set error num 0
 scoreboard players set playingteams num 0
+
 scoreboard objectives remove GameKillCount
 scoreboard objectives remove GameDeathCount
+scoreboard objectives remove destroy_bluebed
+scoreboard objectives remove destroy_redbed
+scoreboard objectives remove destroy_greenbed
+scoreboard objectives remove destroy_yellowbed
 scoreboard objectives add GameKillCount dummy
 scoreboard objectives add GameDeathCount dummy
+scoreboard objectives add destroy_bluebed mined:blue_bed
+scoreboard objectives add destroy_redbed mined:red_bed
+scoreboard objectives add destroy_greenbed mined:green_bed
+scoreboard objectives add destroy_yellowbed mined:yellow_bed
+
 execute if entity @a[team=blue] run scoreboard players add playingteams num 1
 execute if entity @a[team=red] run scoreboard players add playingteams num 1
 execute if entity @a[team=yellow] run scoreboard players add playingteams num 1
@@ -27,7 +37,7 @@ execute unless score Tmp num matches 1.. run tellraw @a [{"text":" [BED WARS] ",
 
 # Spawn Point
 execute store result score Tmp num run execute if entity @e[tag=spawn]
-execute unless score Tmp num >= playingteams num run tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" ERROR：","color":"red"},{"text":" 玩家重生點數量與遊玩的隊伍數量不一致 ","color":"white"}]
+execute unless score Tmp num >= playingteams num run tellraw @a [{"text":" [BED WARS] ","color":"gold"},{"text":" ERROR：","color":"red"},{"text":" 玩家重生點數量小於遊玩的隊伍數量","color":"white"}]
 execute unless score Tmp num >= playingteams num run scoreboard players set error num 1
 
 # Bed Point
@@ -67,6 +77,7 @@ execute if entity @a[team=green] unless score Tmp num matches 1 run scoreboard p
 # 開始遊戲
 scoreboard players reset playingteams num
 execute if score error num matches 1.. run tellraw @a [{"text":" [BED WARS]","color":"gold"},{"text":"  遊戲無法開始  請設置正確後再重新開始","color":"red","bold":true}]
+execute if score error num matches 1.. run scoreboard players reset start_cooldown
 execute if score error num matches 1.. as @a at @s run playsound minecraft:entity.wither.break_block ambient @s ~ ~ ~
 execute if score error num matches 0 run scoreboard players set start num 0
 scoreboard players reset error

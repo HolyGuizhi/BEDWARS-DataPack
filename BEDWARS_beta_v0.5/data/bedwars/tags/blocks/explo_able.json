@@ -3,6 +3,7 @@
     "values": [
         "minecraft:air",
         "minecraft:cave_air",
+        "minecraft:void_air",
         "minecraft:blue_wool",
         "minecraft:red_wool",
         "minecraft:yellow_wool",
@@ -13,7 +14,7 @@
         "minecraft:red_terracotta",
         "minecraft:yellow_terracotta",
         "minecraft:green_terracotta",
-        "minecraft:white_terracotta",
+        "minecraft:terracotta",
         "minecraft:end_stone"
     ]
 }

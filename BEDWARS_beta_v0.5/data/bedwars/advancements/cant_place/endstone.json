@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:end_stone"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/end_stone"
+    }
+  }

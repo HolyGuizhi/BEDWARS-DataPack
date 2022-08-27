@@ -8,5 +8,5 @@ execute if score error num matches 1 run function bedwars:play/interrupt
 execute as @a run function bedwars:play/sharpness
 
 # Next
-schedule function bedwars:play/game_check2 1t
+schedule function bedwars:play/slow_tick/02 1t
 scoreboard players reset slowtick

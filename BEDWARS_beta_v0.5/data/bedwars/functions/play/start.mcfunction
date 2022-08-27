@@ -1,5 +1,7 @@
 #Guizhi
 
+scoreboard players set start_cooldown num 1
+
 # Check
 function bedwars:check
 

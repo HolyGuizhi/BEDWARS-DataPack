@@ -14,3 +14,6 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule doLimitedCrafting true
 difficulty normal
+
+# Next
+# schedule function bedwars:play/slow_tick/04 1t

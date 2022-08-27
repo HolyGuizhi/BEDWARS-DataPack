@@ -70,6 +70,7 @@ execute at @e[team=yellow,tag=spawn,limit=1] run spawnpoint @a[team=yellow] ~ ~ 
 execute at @e[team=green,tag=spawn,limit=1] run spawnpoint @a[team=green] ~ ~ ~
 execute as @e[tag=diamond_tier] run data modify entity @s CustomName set value '[{"text":"等級 "},{"text":"I","color":"aqua"}]'
 execute as @e[tag=emerald_tier] run data modify entity @s CustomName set value '[{"text":"等級 "},{"text":"I","color":"green"}]'
+execute at @e[tag=anti-stuck] run fill ~-1 ~-0.5 ~-1 ~1 ~1 ~1 air replace #bedwars:clear_able
 
 # Gamerules
 gamerule doImmediateRespawn true
@@ -82,5 +83,5 @@ gamerule naturalRegeneration true
 gamerule mobGriefing false
 gamerule announceAdvancements false
 gamerule doLimitedCrafting true
-gamerule showDeathMessages false
+gamerule showDeathMessages true
 difficulty normal

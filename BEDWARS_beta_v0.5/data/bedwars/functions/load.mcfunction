@@ -28,12 +28,14 @@ scoreboard objectives add drop_emerald dropped:emerald
 scoreboard objectives add use_bow used:bow
 
 # Scores
+scoreboard players reset start_cooldown
 scoreboard players reset bedloop
 scoreboard players set 20 num 20
 scoreboard players set 3 num 3
 scoreboard players set 4 num 4
 scoreboard players set -1 num -1
 execute unless score attack_speed num matches 0..1 run scoreboard players set attack_speed num 0
+execute unless score pick_sameitem num matches 0..1 run scoreboard players set pick_sameitem num 0
 
 # Teams
 team add blue {"text":"藍隊","color":"blue"}
@@ -74,3 +76,6 @@ execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":"\n [BED WARS] ","c
 execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":".               ","color":"gold"},{"text":" 這有可能會造成此資料包無法正常運作，","bold":true,"color":"red"}]
 execute if score Tmp Tmp matches 3.. run tellraw @a [{"text":".               ","color":"gold"},{"text":" 除非您瞭解這樣不會造成影響，否則不建議這麼做。","bold":true,"color":"red"}]
 execute as @a at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
+
+# 版本
+execute unless score version num matches 6 run function bedwars:version

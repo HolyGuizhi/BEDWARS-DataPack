@@ -1,5 +1,8 @@
 #Guizhi
 
+execute store result score message_flag num run gamerule sendCommandFeedback
+execute if score message_flag num matches 1 run gamerule sendCommandFeedback false
+
 tellraw @a {"text":"===================================================","color":"gold"}
 tellraw @a {"text":">> 點擊隊伍文字 加入隊伍："}
 tellraw @a {"text":"","extra":[{"text":"  [藍隊]  ","color":"blue","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run team join blue"}},{"text":"  [紅隊]  ","color":"red","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run team join red"}},{"text":"  [黃隊]  ","color":"yellow","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run team join yellow"}},{"text":"  [綠隊]  ","color":"green","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run team join green"}},{"text":"  [旁觀]  ","color":"gray","clickEvent":{"action":"run_command","value":"/execute unless score playing num matches 1 run team join spec"}}]}

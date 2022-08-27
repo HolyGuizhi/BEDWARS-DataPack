@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:green_stained_glass"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/green_stained_glass"
+    }
+  }

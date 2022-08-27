@@ -14,4 +14,4 @@ execute if score attack_speed num matches 0 as @a run attribute @s generic.attac
 execute as @a run attribute @s generic.attack_damage base set 2.5
 
 # Next
-schedule function bedwars:play/game_check3 1t
+schedule function bedwars:play/slow_tick/03 1t

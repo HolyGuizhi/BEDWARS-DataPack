@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:oak_planks"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/oak_planks"
+    }
+  }

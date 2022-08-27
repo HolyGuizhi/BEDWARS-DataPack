@@ -1,6 +1,6 @@
 #Guizhi
 
-summon creeper ~ -63 ~ {Fuse:0,Tags:["bedwars","tnt"]}
+summon creeper ~ -63 ~ {Fuse:0,Tags:["bedwars","tnt"],CustomName:'{"text":"TNT"}'}
 tp @e[tag=tnt,limit=1] ~ ~ ~
 
 execute positioned ~ ~ ~1 if block ~ ~ ~ #bedwars:ez_explo run function bedwars:play/item/tnt/explo_layer1

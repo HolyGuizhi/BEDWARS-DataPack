@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "block": "minecraft:blue_wool"
+        }
+      }
+    },
+    "rewards": {
+      "function": "bedwars:anti_stuck/blue_wool"
+    }
+  }
