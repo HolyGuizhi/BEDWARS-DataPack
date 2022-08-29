@@ -4,6 +4,13 @@
 kill @e[type=!player,tag=bedwars]
 kill @e[type=item]
 
+# Schedules
+schedule clear bedwars:play/resources/generator_tiers
+schedule clear bedwars:play/resources/attention
+schedule clear bedwars:play/slow_tick/02
+schedule clear bedwars:play/slow_tick/03
+# schedule clear bedwars:play/slow_tick/04
+
 # Scoreboards
 scoreboard objectives remove num
 scoreboard objectives remove Tmp

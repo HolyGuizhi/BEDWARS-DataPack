@@ -65,3 +65,8 @@ execute store success score @s Tmp run clear @s furnace{upgrade:2} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/resource2
 execute store success score @s Tmp run clear @s furnace{upgrade:3} 1
 execute if score @s Tmp matches 1 run function bedwars:play/upgrade/resource3
+
+execute as @s[scores={destroy_bluebed=1..}] run function bedwars:play/destroy_beds
+execute as @s[scores={destroy_redbed=1..}] run function bedwars:play/destroy_beds
+execute as @s[scores={destroy_yellowbed=1..}] run function bedwars:play/destroy_beds
+execute as @s[scores={destroy_greenbed=1..}] run function bedwars:play/destroy_beds

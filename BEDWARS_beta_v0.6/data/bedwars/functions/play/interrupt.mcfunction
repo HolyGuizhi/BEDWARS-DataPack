@@ -10,14 +10,9 @@ execute if score error num matches 1 run tellraw @a [{"text":" [BED WARS] ","col
 scoreboard players reset error
 execute as @a at @s run playsound entity.player.levelup ambient @s ~ ~ ~
 
-execute as @a run scoreboard players operation @s Tmp = @s destroy_bluebed
-execute as @a run scoreboard players operation @s Tmp += @s destroy_redbed
-execute as @a run scoreboard players operation @s Tmp += @s destroy_yellowbed
-execute as @a run scoreboard players operation @s Tmp += @s destroy_greenbed
-
 tellraw @a {"text":"===================================================","color":"gold"}
 tellraw @s {"text":">> 獲勝隊伍："}
 tellraw @a {"text":"     ( 遊戲中斷 無獲勝隊伍 )","color":"red"}
 tellraw @s {"text":">> 玩家戰績："}
-execute as @a run tellraw @s [{"text":"     擊殺數：","color":"gold"},{"score":{"name":"@s","objective":"GameKillCount"},"color":"white"},{"text":" / ","color":"white"},{"text":"死亡次數：","color":"gold"},{"score":{"name":"@s","objective":"GameDeathCount"},"color":"white"},{"text":" / ","color":"white"},{"text":"破壞床數：","color":"gold"},{"score":{"name":"@s","objective":"Tmp"},"color":"white"}]
+execute as @a run tellraw @s [{"text":"     擊殺數：","color":"gold"},{"score":{"name":"@s","objective":"GameKillCount"},"color":"white"},{"text":" / ","color":"white"},{"text":"死亡次數：","color":"gold"},{"score":{"name":"@s","objective":"GameDeathCount"},"color":"white"},{"text":" / ","color":"white"},{"text":"破壞床數：","color":"gold"},{"score":{"name":"@s","objective":"destroy_beds"},"color":"white"}]
 tellraw @a {"text":"===================================================","color":"gold"}

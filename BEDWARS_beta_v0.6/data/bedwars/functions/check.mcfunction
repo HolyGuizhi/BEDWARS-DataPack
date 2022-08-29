@@ -3,18 +3,21 @@
 scoreboard players set error num 0
 scoreboard players set playingteams num 0
 
+# Scoreboard settings
 scoreboard objectives remove GameKillCount
 scoreboard objectives remove GameDeathCount
 scoreboard objectives remove destroy_bluebed
 scoreboard objectives remove destroy_redbed
 scoreboard objectives remove destroy_greenbed
 scoreboard objectives remove destroy_yellowbed
+scoreboard objectives remove destroy_beds
 scoreboard objectives add GameKillCount dummy
 scoreboard objectives add GameDeathCount dummy
 scoreboard objectives add destroy_bluebed mined:blue_bed
 scoreboard objectives add destroy_redbed mined:red_bed
 scoreboard objectives add destroy_greenbed mined:green_bed
 scoreboard objectives add destroy_yellowbed mined:yellow_bed
+scoreboard objectives add destroy_beds dummy
 
 execute if entity @a[team=blue] run scoreboard players add playingteams num 1
 execute if entity @a[team=red] run scoreboard players add playingteams num 1
