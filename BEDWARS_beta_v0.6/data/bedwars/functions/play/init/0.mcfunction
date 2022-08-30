@@ -8,6 +8,7 @@ scoreboard players set @a leftgame 0
 scoreboard players set @a Armor 0
 scoreboard players set @a GameDeathCount 0
 scoreboard players set @a GameKillCount 0
+scoreboard players set @a destroy_beds 0
 scoreboard objectives remove display
 scoreboard objectives add display dummy {"text":" BED WARS ","color":"gold","bold":true}
 scoreboard objectives setdisplay sidebar display
